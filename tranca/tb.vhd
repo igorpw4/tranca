@@ -22,7 +22,7 @@ architecture a1 of test is
 begin
 
     DUT: entity work.fsm1
-		port map(clk => clk, reset => reset, configurado => configurado, valido => valido);
+		port map(clk => clk, reset => reset, configurar => configurar, valido => valido, entrada => entrada, alarme => alarme, configurado => configurado, tranca => tranca);
     process
 
         variable read_col_from_input_buf : line; -- read lines one by one from input_buf
